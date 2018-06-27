@@ -55,8 +55,8 @@ public class SemanticWebController {
 					"   ?RecursoCalle g10:hasNumNeighborhoodStreet ?Barrio .\r\n" + 
 					"   ?RecursoCalle g10:hasNumDistrictStreet ?Distrito .\r\n" +
 					"}";
-			String filename1 = "C:\\Users\\supra\\eclipse-workspace\\semantic_web\\Semantic-Web\\src\\main\\resources\\static\\rdf\\Contaminacion_Acustica_Mad_17-updated.ttl";
-			String filename2 = "C:\\Users\\supra\\eclipse-workspace\\semantic_web\\Semantic-Web\\src\\main\\resources\\static\\rdf\\Callejero_Madrid-updated.ttl";
+			String filename1 = "src/main/resources/static/rdf/Contaminacion_Acustica_Mad_17-updated.ttl";
+			String filename2 = "src/main/resources/static/rdf/Callejero_Madrid-updated.ttl";
 			
 			System.out.println(queryCalle1);
 			OntModel ontModel1 = ModelFactory.createOntologyModel();
@@ -243,7 +243,7 @@ public class SemanticWebController {
 	
 	    	
 	    	/****************************** Queries zona ******************************/
-	    	String filename = "C:\\Users\\supra\\eclipse-workspace\\semantic_web\\Semantic-Web\\src\\main\\resources\\static\\rdf\\Contaminacion_Acustica_Mad_17-updated.ttl";
+	    	String filename = "src/main/resources/static/rdf/Contaminacion_Acustica_Mad_17-updated.ttl";
 	    	
 			String queryString = "PREFIX owl: <http://www.w3.org/2002/07/owl#>\r\n" + 
 					"SELECT ?Zone ?numero ?Db  WHERE {\r\n" + 
